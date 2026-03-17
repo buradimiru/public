@@ -1,4 +1,4 @@
-# Boschet-Mobilu 
+# Public Repo
 
 ## Onboard Data & Control Flow
 
@@ -174,8 +174,8 @@ Data memory (B):     149 ( 29% )
 > - Updated onboard software with better code for flight efficiency and fiability
 > - Removed base real time connection meetrics and replaced them with average values 
 
-> > [!TIP]
-> - Keep RF modules away from close surfaces and obstacles especially the ground
+> TIP
+> Keep RF modules away from close surfaces and obstacles especially the ground
 
 #### FPGA resource utilization
 ##### Intel Cyclone II
