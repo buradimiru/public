@@ -27,6 +27,12 @@
   <em>Figure 3: IRL 4K monitor/TV UI for telemetry and RF connection integrity</em>
 </p>
 
+<p align="center">
+  <img src="./img/D2.png" alt="Circuit" width="600">
+  <br>
+  <em>Figure 4: Version 2.X FPGA block submodules</em>
+</p>
+
 #### MCU (master) - FPGA (slave) command protocol over interface
 1. Slave asserts READY/DONE high for signaling availability
 2. Master sends COM-REQ high and DATA-REQ low for start of transmission
@@ -126,8 +132,30 @@
 5. Altitude
 
 ### RF bitrate: 250 Kbps
-### Camera statistics: 1080p 60 fps
+### Camera resolution and fps: 1080p 60 fps
 
+---
+
+## Version 1.4 - Accelerometer, Gyroscope and Magnetometer sensor initialization and FPGA I2C burst read driver 
+> [!NOTE]
+> - Added the MPU-9250 sensor to the onboard system
+> - Added MCU software for sensor intialization and diagnostic
+> - Added FPGA drivers for reading the bulk sensor data
+
+#### FPGA resource utilization
+##### Intel Cyclone II
+```
+Total logic elements: 960 / 18752 ( 5% )
+LUT:  886
+FF:   298
+```
+
+#### Onboard MCU resource utilization
+##### PIC16LF1708
+```
+Program memory (W): 4079 ( 100% )
+Data memory (B):     167 ( 33% ) 
+```
 
 ---
 
